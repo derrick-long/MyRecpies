@@ -13,8 +13,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
- 
+  gem 'sqlite3'
   gem 'byebug'
+  gem 'pry'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development do
