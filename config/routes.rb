@@ -20,4 +20,12 @@ Rails.application.routes.draw do
 
   #/recipes/2/like
 
+  resources :chefs, except: [:new]
+  
+  get '/register', to: 'chefs#new' #reroutes chefs/new to register page
+
+  get '/login', to: "logins#new"
+  post '/login', to: "logins#create"
+  get '/logout', to: "logins#destroy"
+ 
 end

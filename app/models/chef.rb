@@ -7,7 +7,7 @@ class Chef < ActiveRecord::Base
   validates :email, presence: true, length: {maximum: 105 },
                               uniqueness: { case_sensitive: false },#here just having uniqueness as a needed validation makes it require unique keys
                               format:{ with: VALID_EMAIL_REGEX }# REGEX = constant because of CAPS it does not change
-  
+  has_secure_password
 end
   
   #google RAILS callbacks
