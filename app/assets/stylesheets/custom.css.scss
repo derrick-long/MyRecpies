@@ -99,6 +99,10 @@ input {
   height: auto !important;
 }
 
+.input_checkbox input {
+  width: auto !important;
+}
+
 span.picture {
   margin-top: 10px;
   input {
@@ -108,9 +112,4 @@ span.picture {
 
 .show_recipe {
   margin: 10px 10px 10px 10px;
-}
-
-.style {
-  margin-right: -20px;
-  float: right;
 }
